@@ -1,0 +1,285 @@
+.curve {
+    transition: translate 0.5s, width 0.5s;
+}
+
+#background {
+    position: relative;
+    z-index: -1;
+}
+
+#exit_button {
+    vertical-align: middle;
+    width: 40px;
+}
+
+a {
+    width: fit-content;
+    text-decoration: none;
+    display: contents;
+    position: absolute;
+}
+
+.exit_button {
+    cursor: pointer;
+    margin: 0px;
+    position: absolute;
+    top: 3vw;
+    left: 3vw;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: #CC5DE8;
+}
+
+#add_button {
+    vertical-align: middle;
+    width: 40px;
+}
+
+.add_button {
+    cursor: pointer;
+    margin: 0px;
+    /* display: flex; */
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: #CC5DE8;
+}
+
+
+/* CSS animation styleing */
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        transform: scale(0.989);
+        translate: 20px 20px;
+        filter: drop-shadow(1px 0px 3px black);
+    }
+}
+
+h3 {
+    margin-bottom: 2px;
+}
+
+
+/* p{
+    margin-top: 0;
+    font-size: 16px;
+} */
+
+.own {
+    margin-top: 0;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#image {
+    margin: 5px;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#image:hover {
+    box-shadow: 0 0 2px 1px #CC5DE8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rentBtn {
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rent_button {
+    cursor: pointer;
+    background-color: #CC5DE8;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#rent_button::first-letter {
+    font-size: 200%;
+}
+
+.prop {
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#propName {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+#OwnedBy {
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+#Desc {
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+#rent_button {
+    transition-duration: 0.4s;
+}
+
+#rent_button:hover {
+    background-color: #141313;
+    color: #CC5DE8;
+    box-shadow: 0 12px 16px 0 #CC5DE8, 0 17px 50px 0 #CC5DE8
+}
+
+#myInput:focus-visible {
+    outline: none;
+}
+
+.form {
+    position: absolute;
+    top: 3vw;
+    left: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myInput {
+    border: 2px solid #CC5DE8;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    padding: 2mm;
+}
+
+#submit:focus-visible {
+    outline: none;
+}
+
+#submit {
+    border: 2px solid #CC5DE8;
+    background-color: #f1f1f1;
+    margin-left: 5px;
+    width: 50px;
+}
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: flex;
+}
+
+.autocomplete-items {
+    position: absolute;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    padding: 2mm;
+    background-color: #ffffff;
+    border-radius: 2mm;
+    margin-top: 2mm;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+    border-bottom: 1px solid #808080;
+}
+
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    color: black;
+}
+
+.add_button {
+    font-family: martel;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.exit_button {
+    font-size: 5vh;
+    font-family: martel;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 44vw;
+    height: fit-content;
+    margin: 1vw;
+    border-bottom: 2px solid purple;
+    display: block;
+    transition: 0.5s;
+}
+
+.transition {
+    z-index: 1;
+    overflow: hidden;
+}
+
+.right {
+    width: 120%;
+    position: absolute;
+    height: 120%;
+    background-color: #808080;
+    z-index: 1;
+    rotate: 60deg;
+    left: 24vw;
+    bottom: 20vw;
+}
+
+.left {
+    width: 120%;
+    position: absolute;
+    height: 120%;
+    background-color: #808080;
+    z-index: 1;
+    rotate: 60deg;
+    right: 0vw;
+    top: 20vw;
+}
