@@ -38,7 +38,7 @@ export const Rent_info = () => {
   const queryParameters = new URLSearchParams(window.location.search);
 
   const fetchProducts = () => {
-    const url = "http://kedar/getData2?flat=" + queryParameters.get("id");
+    const url = "http://komal/getData2?flat=" + queryParameters.get("id");
     axios
       .get(url)
       .then((res) => {
@@ -75,7 +75,7 @@ export const Rent_info = () => {
             <div className="slide">
               <img
                 className="images"
-                src={"http://Kedar/Images/" + flat.name + "/" + e}
+                src={"http://komal/Images/" + flat.name + "/" + e}
                 alt="Property-image"
               />
             </div>
