@@ -22,7 +22,7 @@ export const Property = () => {
 
   console.log(queryParameters.get("city"));
   const fetchProducts = () => {
-    const url = "http://kedar/getData?city=" + queryParameters.get("city");
+    const url = "http://komal/getData?city=" + queryParameters.get("city");
     axios
       .get(url)
       .then((res) => {
