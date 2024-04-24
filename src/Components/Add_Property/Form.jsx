@@ -21,7 +21,7 @@ export const Property_form = () => {
       <div class="cover1"></div>
       <div class="form">
         <form
-          action="http://kedar/postData"
+          action="http://komal/postData"
           method="POST"
           encType="multipart/form-data"
         >
