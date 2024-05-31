@@ -22,7 +22,7 @@ export const Property = () => {
 
   console.log(queryParameters.get("city"));
   const fetchProducts = () => {
-    const url = "http://komal/getData?city=" + queryParameters.get("city");
+    const url = "http://localhost:80/getData?city=" + queryParameters.get("city");
     axios
       .get(url)
       .then((res) => {
@@ -101,7 +101,7 @@ export const Property = () => {
               }}
               draggable={false}
               src={
-                "http://Kedar/Images/" + product.name + "/" + product.image[1]
+                "http://localhost/Images/" + product.name + "/" + product.image[1]
               }
               alt="Property-image"
             />
