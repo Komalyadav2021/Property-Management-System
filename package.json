@@ -1,0 +1,21 @@
+{
+    "name": "cloud",
+    "version": "1.0.0",
+    "description": "it's just a cloud api which provides you a recorded data",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node App.js"
+    },
+    "author": "Komal Yadav",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.19.2",
+        "express-fileupload": "^1.4.0",
+        "mongodb": "^5.1.0",
+        "mongoose": "^7.0.3",
+        "nodemon": "^2.0.22",
+        "superheroes": "^3.0.0"
+    }
+}
