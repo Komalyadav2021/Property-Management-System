@@ -1,12 +1,17 @@
 const mongoose = require("mongoose");
+
 mongoose
-  .connect("mongodb+srv://komal__0309:visQE37Pw02Mc4gB@komalyadav.lgv9zvh.mongodb.net/komalyadav?retryWrites=true&w=majority", {
+  .connect("mongodb://localhost:27017/PMS1", { 
     useNewUrlParser: true,
+    useUnifiedTopology: true, 
   })
   .then(() => {
-    console.log("connected");
+    console.log("Connected to MongoDB Compass");
   })
   .catch((error) => {
-    console.log(error);
+    console.error("Connection error:", error);
   });
+
+  module.exports = mongoose;
+
 
